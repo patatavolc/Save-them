@@ -2,7 +2,7 @@
   font-family: "Stack Sans Headline";
   src: url("../assets/fonts/StackSansHeadline-VariableFont_wght.ttf")
     format("truetype");
-  font-weight: bolds;
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -45,4 +45,49 @@ h3,
 h4 {
   font-family: var(--font-title);
   color: var(--text-color);
+}
+
+.logo-container {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 80px;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  display: block;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 1rem;
+  background-color: var(--color-primary);
+  width: 100%;
+}
+
+#main-nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+#main-nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: larger;
+  transition: color 0.3s ease;
+}
+
+#main-nav a:hover {
+  color: var(--accent);
 }

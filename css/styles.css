@@ -69,6 +69,8 @@ header {
   padding: 1rem;
   background-color: var(--color-primary);
   width: 100%;
+  position: relative;
+  z-index: 10;
 }
 
 #main-nav ul {
@@ -90,4 +92,39 @@ header {
 
 #main-nav a:hover {
   color: var(--accent);
+}
+
+.enredaderas {
+  position: absolute;
+  width: 600px;
+  height: auto;
+  top: 100px;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.enredaderas:first-of-type {
+  left: -100px;
+  margin-top: -10px;
+  animation: balanceo 5s ease-in-out infinite;
+}
+
+.enredaderas:last-of-type {
+  right: -100px;
+  margin-top: -10px;
+  transform: scaleX(-1);
+  animation: balanceo 5s ease-in-out infinite;
+}
+
+@keyframes balanceo {
+  0% {
+    transform: rotate(0deg) scaleX(-1);
+  }
+  50% {
+    transform: rotate(2deg) scaleX(-1);
+  }
+  100% {
+    transform: rotate(0deg) scaleX(-1);
+  }
 }

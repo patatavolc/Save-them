@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Stack Sans Headline";
+  src: url("../assets/fonts/StackSansHeadline-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: bolds;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Stack Sans Text";
+  src: url("../assets/fonts/StackSansText-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --color-primary: #ccd5ae; /* Verde Salvia (Headers/Nav) */
+  --color-secondary: #e9edc9; /* Beige verdoso (Aside/Secciones)*/
+  --background-color: #fefae0; /* Crema (Fondo general)*/
+  --card-background: #faedcd; /* Fondo de articles*/
+  --accent: #d4a373; /*Botones/Links*/
+  --text-color: #5c4a33; /* Marrón oscuro (Texto) */
+
+  --font-title: "Stack Sans Headline", sans-serif;
+  --font-body: "Stack Sans Text", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--font-body);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-title);
+  color: var(--text-color);
+}

@@ -4,38 +4,167 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Save Them | Inicio</title>
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-  <img src="assets/enredaderas.png" class="enredaderas">
-  <img src="assets/enredaderas.png" class="enredaderas">
   <header>
-
-    <div class="logo-container">
-      <img src="assets/logo.svg" alt="Logo de Save Them" class="logo">
+    <div class="brand"></div>
+    <div class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="pages/adopcion.html">Adopcion</a>
+      <a href="pages/contacto.html">Contacto</a>
     </div>
-    <nav id="main-nav">
-      <ul>
-        <li><a href="index.html" class="active">Inicio</a></li>
-        <li><a href="pages/adopcion.html">Adopcion</a></li>
-        <li><a href="pages/contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-
   </header>
 
-  <div class="hero"></div>
+  <main>
+    <section id="hero">
+      <div class="title">
+        <h1>Encuentra a tu nuevo</h1>
+        <h1 id="hero-title-yellow">Mejor Amigo</h1>
+      </div>
+      <p>Cada animal merece un hogar lleno de amor. Únete a nuestra <br>
+        misión de rescatar, rehabilitar y dar un nuevo hogar a mascotas <br>
+        necesitadas</p>
+      <button>Adopta Ahora -></button>
+    </section>
 
-  <section class="destacados">
-    <article class="marcota-card"></article>
-    <article class="marcota-card"></article>
-  </section>
+    <section id="rates">
+      <div class="rate">
+        <p id="data">500+</p>
+        <small>Animales salvados</small>
+      </div>
+      <div class="rate">
+        <p id="data">98%</p>
+        <small>Tasa de éxito</small>
+      </div>
+      <div class="rate">
+        <p id="data">120</p>
+        <small>Voluntarios activos</small>
+      </div>
+      <div class="rate">
+        <p id="data">15k</p>
+        <small>Comida servida</small>
+      </div>
+    </section>
 
-  <aside></aside>
+    <section id="info">
+      <article>
+        <div id="article-head">
+          <img src="assets/iconos/heart-handshake.svg" alt="Manos enlazadas">
+          <p id="article-head-text">Nuestra Misión</p>
+        </div>
+        <h3>Salvando vidas, una pata a la vez</h3>
+        <section id="article-text">
+          <p>En 'Save Them', creemos que la compasión no tiene fronteras. Fundado en 2010, nuestro refugio ha <br>
+            sido un santuario para gatos, perro y animales exóticos que han sido abandonados, descuidados o <br>
+            perdidos. Nuestra misión va más allá de solo proporcionar refugio; nos esforzamos por rehabilitar el <br>
+            espíritu de cada animal que cruza nuestras puertas.</p>
+          <p>Trabajamos incansablemente con un equipo dedicado de veterinarios y voluntarios para asegurar <br>
+            que cada mascota reciba atención médica, el entrenamiento de comportamiento y el amor que <br>
+            necesitan para estar listos para sus hogares definitivos.</p>
+          <p>Ya sea que estés buscando adoptar un cachorro juguetón, un gato senior o un compañero exótico <br>
+            único, estamos aquí para guiarte en el proceso de encontrar tu pareja perfecta.</p>
+        </section>
+        <img src="assets/imagenes/paseando-perros.png" alt="Tres personas paseando a sus perros">
+        <button>Leer historia completa</button>
+      </article>
 
-  <footer></footer>
+      <aside>
+        <div id="aside-header">
+          <div>
+            <img src="assets/iconos/clock-exclamation.svg" alt="Reloj con una exclamación">
+            <h3>Rescates recientes</h3>
+          </div>
+          <a href="#">Ver más</a>
+        </div>
+        <hr>
+        <div id="animales-aside">
+          <div class="animales-aside-card">
+            <img src="" alt="">
+            <div class="animales-card-info">
+              <h4 class="animal-card-name">Buddy</h4>
+              <small class="animal-card-raza">Golden Retriever·2 años</small>
+              <div class="status" id="disponible">Disponible</div>
+            </div>
+          </div>
+
+          <div class="animales-aside-card">
+            <img src="" alt="">
+            <div class="animales-card-info">
+              <h4 class="animal-card-name">Kanna</h4>
+              <small class="animal-card-raza">Siamesa mestiza·5 años</small>
+              <div class="status" id="disponible">Disponible</div>
+            </div>
+          </div>
+          <div class="animales-aside-card">
+            <img src="" alt="">
+            <div class="animales-card-info">
+              <h4 class="animal-card-name">Thumper</h4>
+              <small class="animal-card-raza">Holland Lop·1 años</small>
+              <div class="status" id="pendiente">Pendiente</div>
+            </div>
+          </div>
+        </div>
+        <div id="donate">
+          <small>¿Quieres ayudar a estos animales?</small>
+          <button></button>
+        </div>
+      </aside>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-sections">
+      <div class="footer-section">
+        <div class="footer-section-title">
+          <img src="assets/iconos/logo.svg" alt="Logo de la empresa">
+          <h3>Save Them</h3>
+        </div>
+        <div class="footer-section-details">
+          <div class="footer-section-detail">
+            <img src="assets/iconos/map-pin.svg" alt="Pin para mapas">
+            <small class="footer-detail-text">San Juan de la Peña 23, Zaragoza, España</small>
+          </div>
+          <div class="footer-section-detail">
+            <img src="assets/iconos/phone.svg" alt="Telefono">
+            <small class="footer-detail-text">(+34) 655 478 984</small>
+          </div>
+          <div class="footer-section-detail">
+            <img src="assets/iconos/mail.svg" alt="Icono de una carta">
+            <small>contact@savethem.org</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <div class="footer-section-title">
+          <h3>Enlaces rápidos</h3>
+        </div>
+        <div class="footer-section-details">
+          <a href="index.html">Inicio</a>
+          <a href="pages/adopcion.html">Adoptar</a>
+          <a href="pages/contacto.html">Contacto</a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <div class="footer-section-title">
+          <h3>Contáctanos</h3>
+        </div>
+        <div id="redes">
+          <a href=""><img src="assets/iconos/brand-facebook.svg" alt="Icono de Facebook"></a>
+          <a href=""><img src="assets/iconos/brand-instagram.svg" alt="Icono de Instagram"></a>
+          <a href=""><img src="assets/iconos/brand-x.svg" alt="Icono de X"></a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <small id="copy">&copy;2026 Save Them Animal Shelter. Todos los derechos reservados.</small>
+  </footer>
 </body>
 
 </html>

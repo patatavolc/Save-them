@@ -32,6 +32,19 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: var(--font-body);
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-title);
+}
+
+p, small, label, input, textarea, button, a {
+  font-family: var(--font-body);
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -141,4 +154,8 @@ header {
   small {
     font-size: 20px;
   }
+}
+
+#info {
+  background-color: var(--background-color);
 }

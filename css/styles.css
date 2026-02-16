@@ -1298,3 +1298,456 @@ textarea:focus {
 #contact-form button:hover img {
   transform: translateX(5px);
 }
+
+/* Estilos para menú hamburguesa */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1001;
+  margin-right: 7px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* MEDIA QUERIES - RESPONSIVE DESIGN */
+
+/* Tablets - Dispositivos medianos (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  /* Header */
+  .brand p {
+    font-size: 32px;
+  }
+
+  #logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .nav a {
+    font-size: 18px;
+  }
+
+  /* Hero section */
+  .title {
+    font-size: 32px;
+  }
+
+  #hero p {
+    font-size: 18px;
+  }
+
+  /* Info section */
+  #info {
+    flex-direction: column;
+  }
+
+  #info article {
+    width: 95%;
+  }
+
+  #info aside {
+    width: 95%;
+  }
+
+  #article-title {
+    font-size: 36px;
+  }
+
+  /* Animals grid */
+  #animals-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contacto */
+  #contacto-main {
+    flex-direction: column;
+  }
+
+  #contacto {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
+  #aside-contacto {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-bottom: 20px;
+  }
+
+  #contact-form button {
+    width: 40%;
+  }
+
+  /* Footer */
+  .footer-sections {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .footer-section {
+    min-width: 250px;
+  }
+}
+
+/* Móviles - Dispositivos pequeños (menos de 768px) */
+@media screen and (max-width: 768px) {
+  /* Header responsive */
+  header {
+    padding: 10px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 70%;
+    height: calc(100vh - 70px);
+    background-color: var(--color-primary);
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    transition: right 0.3s ease;
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+
+  .nav.active {
+    right: 0;
+  }
+
+  .nav a {
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+  }
+
+  .brand p {
+    font-size: 24px;
+  }
+
+  #logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Hero section */
+  #hero {
+    min-height: 400px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .title {
+    font-size: 24px;
+    padding-top: 20px;
+  }
+
+  .title h1 {
+    font-size: 28px;
+  }
+
+  #hero p {
+    font-size: 16px;
+  }
+
+  #hero button {
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  /* Rates section */
+  #rates {
+    flex-wrap: wrap;
+    padding: 20px 10px;
+  }
+
+  .rate {
+    width: 45%;
+  }
+
+  .rate p {
+    font-size: 32px;
+  }
+
+  .rate small {
+    font-size: 16px;
+  }
+
+  /* Info section */
+  #info {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #info article {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  #info article button {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  #info aside {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  #article-title {
+    font-size: 28px;
+  }
+
+  #article-text {
+    font-size: 14px;
+  }
+
+  #img-perros-paseando {
+    max-height: 200px;
+  }
+
+  /* Adopción - Filtros */
+  #adopcion-container {
+    flex-direction: column;
+  }
+
+  #filtros {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid lightgray;
+    padding: 15px;
+  }
+
+  #filtros-title img {
+    width: 24px;
+    height: 24px;
+  }
+
+  #adopcion-container > div {
+    width: 100%;
+  }
+
+  #search-bar {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  #search-bar img {
+    width: 20px;
+    height: 20px;
+  }
+
+  #search-bar input {
+    width: 100%;
+    order: 2;
+  }
+
+  #search-bar button {
+    order: 3;
+    width: 100%;
+  }
+
+  #animals-container {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .animal-card img {
+    height: 250px;
+  }
+
+  .animal-name-gender img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .animal-details {
+    font-size: 12px;
+  }
+
+  .animal-details img {
+    width: 14px;
+    height: 14px;
+  }
+
+  #cant-adopt h4 {
+    font-size: 32px;
+  }
+
+  /* Contacto */
+  #contacto-main {
+    flex-direction: column;
+  }
+
+  #contacto {
+    width: 100%;
+    margin: 15px 0;
+    padding: 0 15px;
+  }
+
+  #contacto-header h1 {
+    font-size: 28px;
+  }
+
+  #contact-form {
+    margin-right: 0;
+  }
+
+  #contact-form button {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  #name-surname {
+    flex-direction: column;
+  }
+
+  #aside-contacto {
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 20px;
+  }
+
+  .aside-divs {
+    padding: 15px;
+  }
+
+  .aside-divs iframe {
+    width: 100%;
+    height: 300px;
+    max-width: 100%;
+  }
+
+  /* Footer */
+  .footer-sections {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .footer-section {
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer-section-details {
+    align-items: center;
+  }
+
+  #redes {
+    justify-content: center;
+  }
+
+  #copy {
+    text-align: center;
+    padding: 0 15px;
+  }
+}
+
+/* Móviles muy pequeños (menos de 480px) */
+@media screen and (max-width: 480px) {
+  .brand p {
+    font-size: 20px;
+  }
+
+  #logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .title h1 {
+    font-size: 24px;
+  }
+
+  #hero p br {
+    display: none;
+  }
+
+  #hero button {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .rate {
+    width: 100%;
+  }
+
+  #article-title {
+    font-size: 24px;
+  }
+
+  .animal-card img {
+    height: 200px;
+  }
+
+  .animal-name {
+    font-size: 18px;
+  }
+
+  .animal-name-gender img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .animal-details {
+    font-size: 11px;
+  }
+
+  .animal-details img {
+    width: 12px;
+    height: 12px;
+  }
+
+  .especie {
+    font-size: 12px;
+  }
+
+  #filtros-title img {
+    width: 20px;
+    height: 20px;
+  }
+
+  #search-bar img {
+    width: 18px;
+    height: 18px;
+  }
+
+  #cant-adopt h4 {
+    font-size: 24px;
+  }
+
+  .button-adopt {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

@@ -42,10 +42,22 @@
       <div class="filtros-types" id="edad">
         <h4 class="filtros-type-title">Edad</h4>
         <div id="edades">
-          <button class="edades-buttons">Bebe</button>
-          <button class="edades-buttons">Joven</button>
-          <button class="edades-buttons">Adulto</button>
-          <button class="edades-buttons">Senior</button>
+          <label class="edad-checkbox">
+            <input type="checkbox" name="edad" value="bebe">
+            <span class="edad-text">Bebe</span>
+          </label>
+          <label class="edad-checkbox">
+            <input type="checkbox" name="edad" value="joven">
+            <span class="edad-text">Joven</span>
+          </label>
+          <label class="edad-checkbox">
+            <input type="checkbox" name="edad" value="adulto">
+            <span class="edad-text">Adulto</span>
+          </label>
+          <label class="edad-checkbox">
+            <input type="checkbox" name="edad" value="senior">
+            <span class="edad-text">Senior</span>
+          </label>
         </div>
       </div>
       <div class="filtros-types" id="size">
@@ -67,7 +79,7 @@
       </div>
     </aside>
 
-    <div>
+    <div id="search-container">
       <div id="search-bar">
         <img src="../assets/iconos/adopcion/search.svg" alt="Icono de Lupa para buscar">
         <input type="text" placeholder="Busca por nombre, raza o características">
@@ -81,85 +93,85 @@
         <hr>
         <article id="animals-container">
           <div class="animal-card">
-            <img src="" alt="">
+            <img src="../assets/imagenes/daisy.jpg" alt="Imagen de Daisy, gata tricolor">
             <div class="animal-info">
               <div class="animal-name-gender">
-                <h4 class="animal-name">Baxter</h4>
+                <h4 class="animal-name">Daisy</h4>
                 <img src="../assets/iconos/adopcion/gender-female.svg" alt="Icono de género hembra">
               </div>
-              <small class="especie">Mezcla de Beagle</small>
+              <small class="especie">Tricolor</small>
               <small class="animal-details"><img src="../assets/iconos/adopcion/cake.svg"
-                  alt="Icono de una tarta de cumpleaños">2
+                  alt="Icono de una tarta de cumpleaños">4
+                años · <img src="../assets/iconos/adopcion/ruler-3.svg"
+                  alt="Icono de una regla para medir">Pequeño</small>
+            </div>
+          </div>
+          <div class="animal-card">
+            <img src="../assets/imagenes/rita.jpg" alt="Imagen de Rita, perro">
+            <div class="animal-info">
+              <div class="animal-name-gender">
+                <h4 class="animal-name">Rita</h4>
+                <img src="../assets/iconos/adopcion/gender-female.svg" alt="Icono de género hembra">
+              </div>
+              <small class="especie">Mezcla</small>
+              <small class="animal-details"><img src="../assets/iconos/adopcion/cake.svg"
+                  alt="Icono de una tarta de cumpleaños">8
                 años · <img src="../assets/iconos/adopcion/ruler-3.svg"
                   alt="Icono de una regla para medir">Mediano</small>
             </div>
           </div>
           <div class="animal-card">
-            <img src="" alt="">
+            <img src="../assets/imagenes/loki.jpg" alt="Imagen de Loki, gato atigrado">
             <div class="animal-info">
               <div class="animal-name-gender">
-                <h4 class="animal-name">Baxter</h4>
-                <img src="../assets/iconos/adopcion/gender-female.svg" alt="Icono de género hembra">
+                <h4 class="animal-name">Loki</h4>
+                <img src="../assets/iconos/adopcion/gender-male.svg" alt="Icono de género macho">
               </div>
-              <small class="especie">Mezcla de Beagle</small>
+              <small class="especie">Atigrado</small>
               <small class="animal-details"><img src="../assets/iconos/adopcion/cake.svg"
-                  alt="Icono de una tarta de cumpleaños">2
+                  alt="Icono de una tarta de cumpleaños">1
                 años · <img src="../assets/iconos/adopcion/ruler-3.svg"
-                  alt="Icono de una regla para medir">Mediano</small>
+                  alt="Icono de una regla para medir">Grande</small>
             </div>
           </div>
           <div class="animal-card">
-            <img src="" alt="">
+            <img src="../assets/imagenes/maggie.jpg" alt="Imagen de Maggie, bichon maltes mini">
             <div class="animal-info">
               <div class="animal-name-gender">
-                <h4 class="animal-name">Baxter</h4>
+                <h4 class="animal-name">Maggie</h4>
                 <img src="../assets/iconos/adopcion/gender-female.svg" alt="Icono de género hembra">
               </div>
-              <small class="especie">Mezcla de Beagle</small>
+              <small class="especie">Bichon maltes mini</small>
               <small class="animal-details"><img src="../assets/iconos/adopcion/cake.svg"
-                  alt="Icono de una tarta de cumpleaños">2
+                  alt="Icono de una tarta de cumpleaños">10
                 años · <img src="../assets/iconos/adopcion/ruler-3.svg"
-                  alt="Icono de una regla para medir">Mediano</small>
+                  alt="Icono de una regla para medir">Pequeño</small>
             </div>
           </div>
           <div class="animal-card">
-            <img src="" alt="">
+            <img src="../assets/imagenes/nano.jpg" alt="Imagen de Nano, gato atigrado">
             <div class="animal-info">
               <div class="animal-name-gender">
-                <h4 class="animal-name">Baxter</h4>
-                <img src="../assets/iconos/adopcion/gender-female.svg" alt="Icono de género hembra">
+                <h4 class="animal-name">Nano</h4>
+                <img src="../assets/iconos/adopcion/gender-male.svg" alt="Icono de género macho">
               </div>
-              <small class="especie">Mezcla de Beagle</small>
+              <small class="especie">Atigrado</small>
               <small class="animal-details"><img src="../assets/iconos/adopcion/cake.svg"
-                  alt="Icono de una tarta de cumpleaños">2
+                  alt="Icono de una tarta de cumpleaños">10
                 años · <img src="../assets/iconos/adopcion/ruler-3.svg"
-                  alt="Icono de una regla para medir">Mediano</small>
+                  alt="Icono de una regla para medir">Grande</small>
             </div>
           </div>
           <div class="animal-card">
-            <img src="" alt="">
+            <img src="../assets/imagenes/roma.jpg" alt="Imagen de Roma, gato atigrado">
             <div class="animal-info">
               <div class="animal-name-gender">
-                <h4 class="animal-name">Baxter</h4>
+                <h4 class="animal-name">Roma</h4>
                 <img src="../assets/iconos/adopcion/gender-female.svg" alt="Icono de género hembra">
               </div>
-              <small class="especie">Mezcla de Beagle</small>
+              <small class="especie">Atigrado</small>
               <small class="animal-details"><img src="../assets/iconos/adopcion/cake.svg"
-                  alt="Icono de una tarta de cumpleaños">2
-                años · <img src="../assets/iconos/adopcion/ruler-3.svg"
-                  alt="Icono de una regla para medir">Mediano</small>
-            </div>
-          </div>
-          <div class="animal-card">
-            <img src="" alt="">
-            <div class="animal-info">
-              <div class="animal-name-gender">
-                <h4 class="animal-name">Baxter</h4>
-                <img src="../assets/iconos/adopcion/gender-female.svg" alt="Icono de género hembra">
-              </div>
-              <small class="especie">Mezcla de Beagle</small>
-              <small class="animal-details"><img src="../assets/iconos/adopcion/cake.svg"
-                  alt="Icono de una tarta de cumpleaños">2
+                  alt="Icono de una tarta de cumpleaños">5
                 años · <img src="../assets/iconos/adopcion/ruler-3.svg"
                   alt="Icono de una regla para medir">Mediano</small>
             </div>
@@ -170,9 +182,9 @@
           <h4>¿No puedes adoptar ahora?</h4>
           <p>¡Aún puedes hacer una gran diferencia! Sé hogar temporal por unas semanas o <br>
             apadrina un animal para ayudar con sus gastos médicos.</p>
-          <div id="buttons-zone">
-            <button>Ser hogar temporal</button>
-            <button id="apadrinar">Apadrinar</button>
+          <div>
+            <button class="button-adopt">Ser hogar temporal</button>
+            <button class="button-adopt" id="apadrinar">Apadrinar</button>
           </div>
         </div>
       </section>

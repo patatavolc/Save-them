@@ -611,3 +611,161 @@ footer {
   color: var(--text-color);
   align-self: center;
 }
+
+#contacto-main {
+  background-color: var(--background-color);
+  display: flex;
+}
+
+#contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 20px;
+  width: 60%;
+  margin-top: 50px;
+}
+
+#contacto-header {
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    color: gray;
+  }
+}
+
+#contact-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  button {
+    background-color: var(--accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    width: 30%;
+    padding: 20px;
+    font-size: 20px;
+  }
+}
+
+#name-surname {
+  display: flex;
+  gap: 20px;
+}
+
+#name-surname .form-data {
+  flex: 1;
+}
+
+.form-data {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  input {
+    width: 100%;
+    border: none;
+    background-color: var(--card-background);
+    padding: 12px;
+    border-radius: 12px;
+  }
+}
+
+textarea {
+  width: 100%;
+  min-height: 150px;
+  border: none;
+  background-color: var(--card-background);
+  padding: 12px;
+  border-radius: 12px;
+  font-family: var(--font-body);
+  resize: vertical;
+}
+
+#aside-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 20px;
+}
+.aside-divs {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-secondary);
+  border-radius: 12px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.aside-div-title {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  align-items: center;
+}
+
+#horario {
+  margin-top: 10px;
+}
+
+.dias-semana {
+  display: flex;
+  justify-content: space-between;
+}
+
+#closed {
+  color: gray;
+}
+
+.contact-info-data {
+  margin-top: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+#emergencia {
+  background-color: #faf1d4;
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+
+  img {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px;
+    flex-shrink: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: 600;
+  }
+}
+
+#emergency-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
